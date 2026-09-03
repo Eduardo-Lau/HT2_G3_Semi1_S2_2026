@@ -1,0 +1,18 @@
+[Unit]
+Description=API 1 Node.js Express Service (Hoja de Trabajo 2)
+After=network.target
+
+[Service]
+Type=simple
+User=azureuser
+WorkingDirectory=/home/azureuser/HT2/api-node
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=5
+Environment=NODE_ENV=production
+# Permite enlazar a puertos < 1024 (como puerto 80) si se requiere sin ser root
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+
+[Install]
+WantedBy=multi-user.target
+
