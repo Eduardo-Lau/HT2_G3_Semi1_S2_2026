@@ -24,8 +24,8 @@ def check():
 def info():
     data = {
         "Instancia": os.getenv("INSTANCE_NAME", "Maquina 2 - Api 2"),
-        "Curso": os.getenv("COURSE_NAME", "Seminario de Sistemas 1 A"),
-        "Grupo": os.getenv("GROUP_NAME", "Grupo 1")
+        "Curso": os.getenv("COURSE_NAME", "Seminario de Sistemas 1 - A"),
+        "Grupo": os.getenv("GROUP_NAME", "Grupo 3")
     }
     return jsonify(data), 200
 
@@ -42,7 +42,7 @@ if __name__ == '__main__':
     host = os.getenv("HOST", "0.0.0.0")
     print(f"[API 2 - Python/Flask] Servidor escuchando en http://{host}:{port}")
     print(f"[Configuración] Instancia: {os.getenv('INSTANCE_NAME', 'Maquina 2 - Api 2')}")
-    print(f"[Configuración] Curso: {os.getenv('COURSE_NAME', 'Seminario de Sistemas 1 A')}")
-    print(f"[Configuración] Grupo: {os.getenv('GROUP_NAME', 'Grupo 1')}")
+    print(f"[Configuración] Curso: {os.getenv('COURSE_NAME', 'Seminario de Sistemas 1 - A')}")
+    print(f"[Configuración] Grupo: {os.getenv('GROUP_NAME', 'Grupo 3')}")
     app.run(host=host, port=port, debug=False)
 

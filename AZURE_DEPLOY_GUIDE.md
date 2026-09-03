@@ -1,6 +1,6 @@
 # Guía de Despliegue en Microsoft Azure y Grabación de Video
 
-**Curso:** Seminario de Sistemas 1 (USAC)  
+**Curso:** Seminario de Sistemas 1 - Sección A (USAC)  
 **Actividad:** Hoja de Trabajo 2 - Despliegue de APIs en Máquinas Virtuales con Balanceador de Carga en Azure  
 
 ---
@@ -17,7 +17,7 @@
   - Permitir HTTP (puerto `80`).
   - Permitir tráfico en puerto `3000` (o el puerto configurado).
 - **Balanceador de Carga (Azure Load Balancer):**
-  - **Nombre obligatorio:** `elb-semi1-ht2-Grupo#` (reemplazar `#` por tu número de grupo).
+  - **Nombre obligatorio:** `elb-semi1-ht2-Grupo3`
   - **SKU:** Basic o Standard (público).
   - **Frontend IP:** IP pública con etiqueta DNS (FQDN).
   - **Backend Pool:** Contiene a `Instancia-1` e `Instancia-2`.

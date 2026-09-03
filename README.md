@@ -1,6 +1,8 @@
 # Hoja de Trabajo 2 - Despliegue de APIs en Máquinas Virtuales con Balanceador de Carga en Azure
 
-**Curso:** Seminario de Sistemas 1 (USAC)  
+**Universidad de San Carlos de Guatemala** 
+**Facultad de Ingeniería**
+**Curso:** Seminario de Sistemas 1 - sección A
 **Proyecto:** Entorno distribuido con dos APIs independientes (JavaScript y Python) balanceadas con Azure Load Balancer y prueba de tolerancia a fallos.
 
 ---
@@ -50,8 +52,8 @@ Ambas APIs implementan los mismos dos endpoints obligatorios:
   ```json
   {
     "Instancia": "Maquina X - Api X",
-    "Curso": "Seminario de Sistemas 1 A",
-    "Grupo": "Grupo #"
+    "Curso": "Seminario de Sistemas 1 - A",
+    "Grupo": "Grupo 3"
   }
   ```
 
@@ -82,9 +84,4 @@ Ambas APIs implementan los mismos dos endpoints obligatorios:
    python test_apis.py
    ```
 
----
-
-## Despliegue en Azure y Video
-
-Consulta el archivo [AZURE_DEPLOY_GUIDE.md](file:///d:/carlo/OneDrive%20-%20Facultad%20de%20Ingenier%C3%ADa%20de%20la%20Universidad%20de%20San%20Carlos%20de%20Guatemala/USAC/S2%202026/Seminario%201/Lab/HT2/AZURE_DEPLOY_GUIDE.md) para el tutorial paso a paso de configuración de Azure Portal, aprovisionamiento con `deploy/setup_vm*.sh` y el guion cronometrado para la grabación del video grupal.
 

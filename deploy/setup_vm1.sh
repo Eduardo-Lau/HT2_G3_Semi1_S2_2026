@@ -39,8 +39,8 @@ if [ ! -f .env ]; then
     cat <<EOT > .env
 PORT=3000
 INSTANCE_NAME="Maquina 1 - Api 1"
-COURSE_NAME="Seminario de Sistemas 1 A"
-GROUP_NAME="Grupo 1"
+COURSE_NAME="Seminario de Sistemas 1 - A"
+GROUP_NAME="Grupo 3"
 EOT
 fi
 
