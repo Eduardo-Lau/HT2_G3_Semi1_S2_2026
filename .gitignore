@@ -25,6 +25,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Contexto de la HT2
+# Contexto y guías locales
 Context/
+AZURE_DEPLOY_GUIDE.md
 

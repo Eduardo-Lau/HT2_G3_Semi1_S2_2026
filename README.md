@@ -1,8 +1,8 @@
 # Hoja de Trabajo 2 - Despliegue de APIs en Máquinas Virtuales con Balanceador de Carga en Azure
 
-**Universidad de San Carlos de Guatemala** 
-**Facultad de Ingeniería**
-**Curso:** Seminario de Sistemas 1 - sección A
+**Universidad de San Carlos de Guatemala**  
+**Facultad de Ingeniería**  
+**Curso:** Seminario de Sistemas 1 - sección A  
 **Proyecto:** Entorno distribuido con dos APIs independientes (JavaScript y Python) balanceadas con Azure Load Balancer y prueba de tolerancia a fallos.
 
 ---
@@ -11,26 +11,21 @@
 
 ```text
 HT2/
-├── Context/
-│   └── Hoja de trabajo 2.pdf     # Enunciado y requerimientos oficiales
 ├── api-node/                     # API 1: JavaScript (Node.js + Express) -> Instancia-1
 │   ├── server.js                 # Servidor Express con /check y /info
 │   ├── package.json              # Dependencias y scripts npm
-│   ├── .env                      # Variables de entorno
-│   ├── .env.example
+│   ├── .env.example              # Plantilla de variables de entorno
 │   └── README.md
 ├── api-python/                   # API 2: Python (Flask) -> Instancia-2
 │   ├── app.py                    # Servidor Flask con /check y /info
 │   ├── requirements.txt          # Dependencias (Flask, Flask-CORS, Gunicorn)
-│   ├── .env                      # Variables de entorno
-│   ├── .env.example
+│   ├── .env.example              # Plantilla de variables de entorno
 │   └── README.md
 ├── deploy/                       # Scripts y servicios para máquinas virtuales en Azure
 │   ├── api-node.service          # Archivo de servicio systemd para API 1
 │   ├── api-python.service        # Archivo de servicio systemd para API 2
 │   ├── setup_vm1.sh              # Script de aprovisionamiento desatendido para Instancia-1
 │   └── setup_vm2.sh              # Script de aprovisionamiento desatendido para Instancia-2
-├── AZURE_DEPLOY_GUIDE.md         # Guía detallada para Azure y guion del video de 5 min
 ├── test_apis.py                  # Script para probar los endpoints localmente o en la nube
 ├── .gitignore                    # Reglas para Git (ignorar venv, node_modules, etc.)
 └── README.md                     # Este archivo
